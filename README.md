@@ -5,7 +5,7 @@ Python Basic
 ## How to run
 
 ```
-pip install -r lib.txt
+pip install -r requirement.txt
 
 python sbuzz.py
 
@@ -26,11 +26,11 @@ sbuzz2:0.1
 
 ## Build Docker with Python3
 ```
-docker build -t sbuzz:0.1 .
+docker build -t sbuzz3:0.1 Dockerfile3 .
 
 docker create -t -i \
 -p 5000:5000 \
 -h sbuzz \
---name sbuzz \
-sbuzz:0.1
+--name sbuzz3 \
+sbuzz3:0.1
 ```
