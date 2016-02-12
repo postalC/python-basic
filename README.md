@@ -3,8 +3,12 @@
 Python Basic
 
 ## How to run
+`ensure your environment is setup correctly`
 
 ```
+sudo yum -y install gcc gcc-c++ python-devel blas-devel lapack-devel
+sudo yum -y install numpy numpy-f2py scipy
+
 pip install -r requirements.txt
 
 python sbuzz.py
