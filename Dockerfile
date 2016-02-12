@@ -20,14 +20,13 @@ RUN \
  python-dev python-setuptools \
  python-numpy python-scipy \
  libatlas-dev libatlas3gf-base \
- liblapacke-dev
+ libopenblas-dev gfortran
 
 RUN update-alternatives --set libblas.so.3 \
  /usr/lib/atlas-base/atlas/libblas.so.3
 RUN update-alternatives --set liblapack.so.3 \
  /usr/lib/atlas-base/atlas/liblapack.so.3
 
-RUN apt-get install -y libopenblas-dev
 COPY requirements.txt /opt/sbc/
 RUN pip install --proxy proxy.wdf.sap.corp:8080 --no-cache-dir -r requirements.txt
 COPY project/ /opt/sbc
