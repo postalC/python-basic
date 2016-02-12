@@ -5,7 +5,7 @@ Python Basic
 ## How to run
 
 ```
-pip install -r requirement.txt
+pip install -r requirements.txt
 
 python sbuzz.py
 

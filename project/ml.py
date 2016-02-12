@@ -11,7 +11,6 @@ from classification import predictNew
 from classification import loadClassifier
 from database import db, Data
 from sqlalchemy.orm import sessionmaker
-
 import logging
 
 __copyright__ = "Copyright (C) 2015 MLI SG SAP Inc."

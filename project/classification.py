@@ -1,3 +1,10 @@
+################################################################################
+# Social Buzz Clustering
+# -  Classification Learning -
+
+# Author <a href='mailto:ruidan.he@sap.com'>He Ruidan</a>
+# Copyright (C) 2015 by MLI SG SAP Inc.
+################################################################################
 import numpy as np
 import random
 from sklearn.feature_extraction.text import CountVectorizer
@@ -7,6 +14,10 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.svm import SVC
 from sklearn.pipeline import Pipeline
 from sklearn.externals import joblib
+
+__copyright__ = "Copyright (C) 2015 MLI SG SAP Inc."
+__license__ = "MLI SG SAP"
+__version__ = "0.1.0"
 
 
 def parseData(source, groups):

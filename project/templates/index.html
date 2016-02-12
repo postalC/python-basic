@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Buzz Clustering</title>
+</head>
+<body>
+
+    <img src="static/SBC_logo.png" alt="SBC">
+    <h2>Listing Messages:</h2>
+
+    <ul>
+        {% for data in result %}
+        <li><strong>{{ data.classified }}</strong> ==> {{ data.message }}</li>
+        {% else %}
+        <em>No message yet!</em>
+        {% endfor %}
+    </ul>
+
+    <hr>
+    <h3>Simple Classify Form:</h3>
+    <form method="POST" action="/new">
+        {{ form.hidden_tag() }}
+        {{ form.message.label }} {{ form.message(size=100) }}
+        <br/>
+        {{ form.submit }}
+    </form>
+
+</body>
+</html>
